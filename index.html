@@ -134,7 +134,7 @@
             <label class="form-label">Escribe aquí tu mensaje</label>
             <textarea class="form-control" id="comentariosUsuario" rows="4" placeholder="Introduce tu texto aquí"></textarea>
 
-            <button class="btn btn-primary mt-2">Enviar</button>
+            <button class="btn btn-primary mt-2" id="btnEnviar">Enviar</button>
         </section>
 
     </main>
@@ -149,6 +149,26 @@
     <script>
         const toast = new bootstrap.Toast(document.getElementById('ofertaToast'));
         toast.show();
+
+
+
+        document.getElementById("btnEnviar").addEventListener("click", function () {
+
+            let mensajes = [
+                "Te agradecemos tu comentario,",
+                "nuestros asistentes",
+                "se pondrán en contacto con usted."
+            ];
+
+            let mensajeFinal = "";
+
+            
+            for (let i = 0; i < mensajes.length; i++) {
+                mensajeFinal += mensajes[i] + " ";
+            }
+
+            alert(mensajeFinal);
+        });
     </script>
 
 </body>

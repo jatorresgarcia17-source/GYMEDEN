@@ -1,0 +1,10 @@
+h1 { 
+  color: rgb(43, 0, 255);
+  font-size: 5em; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  background-color: rgb(224, 216, 223); /* fondo */
+  border: 2px solid rgb(4, 141, 56); /* borde */
+}
